@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Araç Galerisi</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    .card-img-top {
+      height: 200px; /* Dilediğiniz bir yükseklik değeri */
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="bg-dark text-white py-4">
+    <div class="container">
+      <h1 class="display-4">Araç Galerisi</h1>
+      <p class="lead">Sevdiğim araçların galerisi</p>
+    </div>
+  </header>
+
+  <div class="container mt-5">
+    <div class="row">
+      <!-- Araçlar buraya gelecek -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="resimler/rolls_royce.jpg" class="card-img-top img-fluid" alt="Rolls Royce">
+          <div class="card-body">
+            <h5 class="card-title">Rolls Royce</h5>
+            <a href="#" class="btn btn-primary" onclick="searchOnWikipedia('Rolls Royce')">Detaylar</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="resimler/audi_a6.jpg" class="card-img-top img-fluid" alt="Audi A6">
+          <div class="card-body">
+            <h5 class="card-title">Audi A6</h5>
+            <a href="#" class="btn btn-primary">Detaylar</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="resimler/aston_martin.jpg" class="card-img-top img-fluid" alt="Range Rover">
+          <div class="card-body">
+            <h5 class="card-title">Aston Martin</h5>
+            <a href="#" class="btn btn-primary">Detaylar</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="resimler/range_rover.png" class="card-img-top img-fluid" alt="Range Rover">
+          <div class="card-body">
+            <h5 class="card-title">Range Rover</h5>
+            <a href="#" class="btn btn-primary">Detaylar</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="resimler/tofas_sahin.jpg" class="card-img-top img-fluid" alt="Range Rover">
+          <div class="card-body">
+            <h5 class="card-title">Tofaş Şahin</h5>
+            <a href="#" class="btn btn-primary">Detaylar</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="resimler/porsche_911.jpg" class="card-img-top img-fluid" alt="Range Rover">
+          <div class="card-body">
+            <h5 class="card-title">Porsche 911</h5>
+            <a href="#" class="btn btn-primary">Detaylar</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="resimler/bmw_e9.jpg" class="card-img-top img-fluid" alt="Range Rover">
+          <div class="card-body">
+            <h5 class="card-title">BMW E9</h5>
+            <a href="#" class="btn btn-primary">Detaylar</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="resimler/volkswagen_tiguan.jpg" class="card-img-top img-fluid" alt="Range Rover">
+          <div class="card-body">
+            <h5 class="card-title">Volkswagen Tiguan</h5>
+            <a href="#" class="btn btn-primary">Detaylar</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="resimler/togg_t10x.jpg" class="card-img-top img-fluid" alt="Range Rover">
+          <div class="card-body">
+            <h5 class="card-title">TOGG T10X</h5>
+            <a href="#" class="btn btn-primary">Detaylar</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="bg-dark text-white py-4">
+    <div class="container text-center">
+      <p> Kadir Kandemir tarafından hazırlanmıştır</p>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <script>
+    function searchOnWikipedia(query) {
+      var url = "https://en.wikipedia.org/wiki/" + encodeURIComponent(query);
+      window.open(url, "_blank");
+    }
+  </script>
+
+</body>
+</html>
